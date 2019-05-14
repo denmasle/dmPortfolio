@@ -1,0 +1,50 @@
+@media (max-width: 1200px) {
+    .icons {
+        text-align: right;
+    }
+}
+
+@media (max-width: 991px) {
+    .icons {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 40% 0 0;
+    }
+}
+
+@media (max-width: 603px) {
+    #menu.navbar-default {
+        background-color: rgba(0, 0, 0, 0.699);
+        padding: 15px;
+	}
+
+    .hover-bg .hover-text {
+        padding: 12% 10%;
+    }
+}
+
+@media (max-width: 485px) {
+    #about h2 {
+        text-align: center;
+    }
+
+    #about .overlay {
+        padding: 40px 0 0 0;
+    }
+
+    #contact .overlay {
+        padding: 40px 0 0 0;
+    }
+
+    .section-title hr {
+        width: 100%;
+    }
+
+    .hover-bg .hover-text {
+        padding: 22% 10%;
+    }
+}

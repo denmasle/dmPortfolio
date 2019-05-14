@@ -1,0 +1,453 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400);
+body, html {
+  font-family: 'Lato', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #5a5a5a;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+h1 strong {
+  font-weight: 900;
+}
+
+h2 {
+  color: #FFF;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+p.intro {
+  color: #FFF;
+  font-size: 18px;
+  margin: 12px 0 0;
+  line-height: 28px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #fcb150;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #fcb150;
+}
+
+.section-title hr {
+  border-color: #fcb150;
+  border-width: 4px;
+  width: 60px;
+  float: left;
+  clear: both;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+
+/* Navigation */
+#menu {
+  padding: 20px;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#menu a.navbar-brand {
+  font-family: 'Mr Bedfort', cursive;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 900;
+}
+
+#menu.navbar-default {
+  background-color: rgba(248, 248, 248, 0);
+  border-color: rgba(231, 231, 231, 0);
+}
+
+#menu.navbar-default .navbar-nav > .active > a,
+#menu.navbar-default .navbar-nav > .active > a:hover,
+#menu.navbar-default .navbar-nav > .active > a:focus {
+  color: #fcb150 !important;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#menu.navbar-default .navbar-toggle:hover,
+#menu.navbar-default .navbar-toggle:focus {
+  background-color: #fcb150;
+  border-color: #fcb150;
+}
+
+#menu.navbar-default .navbar-toggle:hover > .icon-bar {
+  background-color: #FFF;
+}
+
+.on {
+  background-color: #222222 !important;
+  padding: 0 !important;
+}
+
+/* Home */
+#home {
+  background: url(../img/main-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #FFF;
+}
+
+#home .overlay {
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 );
+  /* IE6-9 */
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#home .content {
+  position: relative;
+  padding: 20% 0 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+.color {
+  color: #fcb150;
+}
+
+a.fa.fa-angle-down {
+  padding: 10px 15px;
+  color: #FFF;
+  border: 2px solid #b4b4b4;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-top: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+a.fa.fa-angle-down:hover {
+  background: #fcb150;
+  color: #FFF;
+  border: 2px solid #fcb150;
+}
+
+/* About */
+#about {
+  background: url(../img/a-background.jpg) no-repeat center top;
+  background-color: #363636;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#about .overlay {
+  padding: 80px 0 120px 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.75+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(54, 54, 54, 0.75)), to(#363636));
+  background: linear-gradient(to bottom, rgba(54, 54, 54, 0.75) 0%, #363636 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#bf363636', GradientType=0 );
+  /* IE6-9 */
+}
+
+#about .about-text {
+  text-align: justify;
+  padding-bottom: 40px;
+}
+
+/* Line */
+.section-title.center {
+  padding: 30px 0;
+}
+
+.section-title.center .line {
+  border-top: 4px solid #fcb150;
+  height: 10px;
+  width: 60px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.section-title.center hr {
+  border-top: 4px solid rgba(252, 172, 69, 0.34);
+  width: 40px;
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  left: 17%;
+}
+
+.icons {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  color: #FFF;
+  font-size: 12rem;
+}
+
+/* Projects */
+#project {
+  padding: 50px 0 40px 0;
+  background-color: #363636;
+}
+
+#project i.fa {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fcb150;
+  font-size: 20px;
+  padding: 9px;
+  border-radius: 50%;
+  color: #fcb150;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item .hover-bg {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hover-bg .hover-text {
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.66);
+  padding: 25% 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.hover-bg .hover-text > h4 {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text > h4 {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hover-bg .hover-text > i {
+  opacity: 0;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hover-bg:hover .hover-text > i {
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.hover-bg:hover .hover-text {
+  opacity: 1;
+}
+
+.img-responsive {
+  height: 100%;
+  width: 100%;
+}
+
+/* Contact */
+#contact {
+  background: url(../img/contact-bg.jpg) no-repeat center top;
+  background-color: #363636;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#contact .overlay {
+  padding: 100px 0 40px 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.75+100 */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#363636), to(rgba(54, 54, 54, 0.75)));
+  background: linear-gradient(to bottom, #363636 0%, rgba(54, 54, 54, 0.75) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#bf363636', GradientType=0 );
+  /* IE6-9 */
+}
+
+#contacth3 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFF;
+}
+
+#contactform {
+  padding: 20px 0;
+}
+
+#contacti.fa {
+  color: #121d1f;
+  margin-bottom: 10px;
+}
+
+#contact .text-danger {
+  color: #ff6600;
+  text-align: left;
+}
+
+#contact .form-control {
+  display: block;
+  width: 100%;
+  padding: 6px 12px;
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #FFF;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-image: none;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  transition: none;
+}
+
+#contact .form-control:focus {
+  border-color: inherit;
+  outline: 0;
+  -webkit-box-shadow: transparent;
+  box-shadow: transparent;
+}
+
+#contact .form-control::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+#contact .form-control:-moz-placeholder {
+  color: #ccc;
+}
+
+#contact .form-control::-moz-placeholder {
+  color: #ccc;
+}
+
+#contact .form-control:-ms-input-placeholder {
+  color: #ccc;
+}
+
+#contact .btn {
+  margin-top: 20px;
+  font-weight: 900;
+}
+
+#contact .social {
+  margin-top: 80px;
+}
+
+#contact .social ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+#contact .social i.fa {
+  font-size: 50px;
+  padding: 4px 5px;
+  color: #FFF;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#contact .social i.fa:hover {
+  color: #fcb150;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 400;
+  float: left;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+/* Footer */
+nav#footer {
+  background: #222222;
+  color: #FFF;
+  padding: 20px 0 15px 0;
+}
+
+nav#footer .fnav {
+  vertical-align: middle;
+}
+
+nav#footer p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+ul.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=main.css.map */
